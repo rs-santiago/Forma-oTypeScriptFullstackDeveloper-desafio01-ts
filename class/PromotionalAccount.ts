@@ -9,7 +9,7 @@ export class PromotionalAccount extends DioAccount {
 
   deposit = (depositValue: number): void => {
     if(this.validateStatus()){
-      this.balance = this.balance + depositValue + this.promotionalValue
+      this.setBalance(this.getBalance() + depositValue + this.promotionalValue)
       console.log('Voce depositou')
     }
   }

@@ -4,24 +4,24 @@ import { PromotionalAccount } from './class/PromotionalAccount'
 
 const promotionalAccount: PromotionalAccount = new PromotionalAccount(1, 'Nath', 1)
 promotionalAccount.deposit(100)
-promotionalAccount.getBalance()
+promotionalAccount.consultBalance()
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
 peopleAccount.deposit(100)
 peopleAccount.withdraw(10)
-peopleAccount.getBalance()
+peopleAccount.consultBalance()
 
 const loanCompanyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
 loanCompanyAccount.deposit(10)
 loanCompanyAccount.getLoan(100)
-loanCompanyAccount.getBalance()
+loanCompanyAccount.consultBalance()
 
 
 const invalidPeopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 30)
 invalidPeopleAccount.invalidateAccount()
 invalidPeopleAccount.deposit(100)
 invalidPeopleAccount.withdraw(10)
-invalidPeopleAccount.getBalance()
+invalidPeopleAccount.consultBalance()
 
 const companyAccount: CompanyAccount = new CompanyAccount('DIO', 40)
 companyAccount.deposit(10)
