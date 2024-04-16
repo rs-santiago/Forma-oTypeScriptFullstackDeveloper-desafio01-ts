@@ -3,7 +3,7 @@ import { DioAccount } from "./DioAccount"
 export class PromotionalAccount extends DioAccount {
   private promotionalValue = 10
 
-  constructor(doc_id: number, name: string, accountNumber: number){
+  constructor(name: string, accountNumber: number){
     super(name, accountNumber)
   }
 

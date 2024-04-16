@@ -7,4 +7,8 @@ export class PeopleAccount extends DioAccount {
     super(name, accountNumber)
     this.doc_id = doc_id
   }
+
+  getDocId = (): number => {
+    return this.doc_id
+  }
 }
