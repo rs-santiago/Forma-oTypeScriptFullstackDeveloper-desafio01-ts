@@ -1,5 +1,10 @@
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
+import { PromotionalAccount } from './class/PromotionalAccount'
+
+const promotionalAccount: PromotionalAccount = new PromotionalAccount(1, 'Nath', 1)
+promotionalAccount.deposit(100)
+promotionalAccount.getBalance()
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
 peopleAccount.deposit(100)
@@ -12,12 +17,12 @@ loanCompanyAccount.getLoan(100)
 loanCompanyAccount.getBalance()
 
 
-const invalidPeopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
+const invalidPeopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 30)
 invalidPeopleAccount.invalidateAccount()
 invalidPeopleAccount.deposit(100)
 invalidPeopleAccount.withdraw(10)
 invalidPeopleAccount.getBalance()
 
-const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
+const companyAccount: CompanyAccount = new CompanyAccount('DIO', 40)
 companyAccount.deposit(10)
 companyAccount.withdraw(100)
