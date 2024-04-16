@@ -33,7 +33,7 @@ export abstract class DioAccount {
   }
 
   getBalance = (): void => {
-    console.log(this.balance)
+    console.log(`${this.name} seu saldo é de: ${this.balance}`)
   }
 
   invalidateAccount = (): void => {
@@ -46,7 +46,7 @@ export abstract class DioAccount {
     console.log('conta validada')
   }
 
-  private validateStatus = (): boolean => {
+  validateStatus = (): boolean => {
     if (this.status) {
       return this.status
     }
